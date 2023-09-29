@@ -7,33 +7,18 @@
     <style>
       body {
         margin: 0;
-      }
-      #gui {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        width: 100px;
-        padding: 0;
-        margin: 0;
-      }
-      button {
-        font-family: sans-serif;
-        font-size: 16px;
+        font-family: monospace;
+        background-color: #000;
         color: #fff;
-        background-color: #3a772c;
-        width: 100px;
-        height: 40px;
-        margin: 0 0 5px 0;
-        border: none;
+        overflow: hidden;
       }
     </style>
     <title>Car 3D</title>
   </head>
   <body>
-    <div id="gui">
-      <button id="addSphere">Add Sphere</button>
-      <button id="addBox">Add Box</button>
-    </div>
+    <script type="module" src="cannonHelper.js" defer></script>
+    <script type="module" src="joystick.js" defer></script>
+    <script type="module" src="three-conversion-utils.js" defer></script>
     <script type="module" src="game.js"></script>
   </body>
 </html>
